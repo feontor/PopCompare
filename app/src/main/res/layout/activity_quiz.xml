@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".QuizActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textLives"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/lives_format"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textScore"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="@string/score_format"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textPrompt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:text="@string/subtitle"
+            android:textSize="28sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonCountryA"
+                android:layout_width="320dp"
+                android:layout_height="120dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textSize="30sp"
+                android:textColor="@android:color/black"
+                android:backgroundTint="@color/button_purple"
+                app:cornerRadius="60dp"
+                tools:text="Country A" />
+
+            <Button
+                android:id="@+id/buttonCountryB"
+                android:layout_width="320dp"
+                android:layout_height="120dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:layout_marginTop="40dp"
+                android:textSize="30sp"
+                android:textColor="@android:color/black"
+                android:backgroundTint="@color/button_purple"
+                app:cornerRadius="60dp"
+                tools:text="Country B" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
